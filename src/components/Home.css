@@ -1,0 +1,64 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: center;
+    background-color: #f0f0f0; /* Background color for the whole page */
+  }
+  
+  .large-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff; /* Background color for the input container */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .title-input {
+    width: 300px; /* Increase the width for the title input */
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Background color for the title input */
+  }
+  
+  .task-input {
+    width: 500px; /* Increase the width for the task input */
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Background color for the task input */
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  .popup {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+  }
+  
