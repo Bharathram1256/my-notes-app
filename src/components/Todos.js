@@ -9,19 +9,27 @@ function Todos({ tasks, onMarkImportant, onMarkCompleted, onRemoveTask }) {
       <h1 className="large-text">Todos</h1>
       <ul>
         {incompleteTasks.map((task, index) => (
-          <li key={index}>
+          <li key={index} className="task-item">
             <div>
               <h2>{task.title}</h2>
               <p>{task.task}</p>
             </div>
-            <div>
-              <button onClick={() => onMarkImportant(index)}>
+            <div className="button-container">
+              <button
+                onClick={() => onMarkImportant(index)}
+                className={`important-button ${task.important ? 'important' : ''}`}
+              >
                 {task.important ? 'Important' : 'Not Important'}
               </button>
-              <button onClick={() => onMarkCompleted(index)}>
+              <button
+                onClick={() => onMarkCompleted(index)}
+                className={`completed-button ${task.completed ? 'completed' : ''}`}
+              >
                 {task.completed ? 'Completed' : 'Mark as Completed'}
               </button>
-              <button onClick={() => onRemoveTask(index)}>Remove</button>
+              <button onClick={() => onRemoveTask(index)} className="remove-button">
+                Remove
+              </button>
             </div>
           </li>
         ))}
@@ -31,5 +39,3 @@ function Todos({ tasks, onMarkImportant, onMarkCompleted, onRemoveTask }) {
 }
 
 export default Todos;
-
-

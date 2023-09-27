@@ -1,0 +1,71 @@
+/* Todos.css */
+
+.large-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff; /* Background color for each task item */
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for Important button */
+  button.important-button {
+    background-color: #ff9800; /* Orange background color for Important button */
+    color: #fff; /* Text color */
+  }
+  
+  button.important-button:hover {
+    background-color: #e68a00; /* Darker orange background color on hover */
+  }
+  
+  /* Styles for Completed button */
+  button.completed-button {
+    background-color: #4caf50; /* Green background color for Completed button */
+    color: #fff; /* Text color */
+  }
+  
+  button.completed-button:hover {
+    background-color: #388e3c; /* Darker green background color on hover */
+  }
+  
+  /* Styles for Remove button */
+  button.remove-button {
+    background-color: #f44336; /* Red background color for Remove button */
+    color: #fff; /* Text color */
+  }
+  
+  button.remove-button:hover {
+    background-color: #d32f2f; /* Darker red background color on hover */
+  }
+  
